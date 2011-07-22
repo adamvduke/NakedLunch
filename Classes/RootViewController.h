@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController
+@interface RootViewController : UITableViewController<UIAccelerometerDelegate>
 {
 	NSMutableArray *eateries;
 	UIBarButtonItem *addBarButton;
 	UIBarButtonItem *shuffleBarButton;
 
+	BOOL histeresisExcited;
+	UIAcceleration* lastAcceleration;
 }
 
+@property(retain) UIAcceleration* lastAcceleration;
 @property(nonatomic,retain) NSMutableArray *eateries;
 @property (nonatomic, retain) UIBarButtonItem *addBarButton;
 @property (nonatomic, retain) UIBarButtonItem *shuffleBarButton;
