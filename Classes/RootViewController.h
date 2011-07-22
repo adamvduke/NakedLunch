@@ -1,10 +1,12 @@
-//
-//  RootViewController.h
-//  NakedLunch
-//
-//  Created by Adam Duke on 7/21/11.
-//  Copyright 2011 appRenaissance, LLC. All rights reserved.
-//
+/* */
+
+/*  RootViewController.h
+ *  NakedLunch
+ *
+ *  Created by Adam Duke on 7/21/11.
+ *  Copyright 2011 appRenaissance, LLC. All rights reserved.
+ *
+ */
 
 #import <UIKit/UIKit.h>
 
@@ -15,11 +17,11 @@
 	UIBarButtonItem *shuffleBarButton;
 
 	BOOL histeresisExcited;
-	UIAcceleration* lastAcceleration;
+	UIAcceleration *lastAcceleration;
 }
 
-@property(retain) UIAcceleration* lastAcceleration;
-@property(nonatomic,retain) NSMutableArray *eateries;
+@property (retain) UIAcceleration *lastAcceleration;
+@property (nonatomic, retain) NSMutableArray *eateries;
 @property (nonatomic, retain) UIBarButtonItem *addBarButton;
 @property (nonatomic, retain) UIBarButtonItem *shuffleBarButton;
 
