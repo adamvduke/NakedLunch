@@ -28,6 +28,8 @@
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56A765C013DD2289007189BD /* ADSharedMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSharedMacros.h; sourceTree = "<group>"; };
+		56A765C113DD2289007189BD /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* NakedLunch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NakedLunch-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				56A765D813DD229D007189BD /* Submodules */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -102,6 +105,24 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56A7659B13DD2289007189BD /* ObjCMacros */ = {
+			isa = PBXGroup;
+			children = (
+				56A765C013DD2289007189BD /* ADSharedMacros.h */,
+				56A765C113DD2289007189BD /* SynthesizeSingleton.h */,
+			);
+			name = ObjCMacros;
+			path = Submodules/ObjCMacros;
+			sourceTree = "<group>";
+		};
+		56A765D813DD229D007189BD /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				56A7659B13DD2289007189BD /* ObjCMacros */,
+			);
+			name = Submodules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

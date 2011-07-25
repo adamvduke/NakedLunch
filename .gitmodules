@@ -1,0 +1,3 @@
+[submodule "Submodules/ObjCMacros"]
+	path = Submodules/ObjCMacros
+	url = git@github.com:adamvduke/ObjCMacros.git

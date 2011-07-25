@@ -8,6 +8,7 @@
  *
  */
 
+#import "ADSharedMacros.h"
 #import "RootViewController.h"
 #include <stdlib.h>
 
@@ -150,7 +151,7 @@ static BOOL accelerationIsShaking(UIAcceleration *last, UIAcceleration *current,
 	                                               delegate:self
 	                                      cancelButtonTitle:@"Cancel"
 	                                      otherButtonTitles:@"OK", nil];
-	[alert addTextFieldWithValue:@"" label:@"New eatery name"];
+	[alert addTextFieldWithValue:nil label:@"New eatery name"];
 	[alert show];
 	[alert release];
 }
@@ -159,12 +160,13 @@ static BOOL accelerationIsShaking(UIAcceleration *last, UIAcceleration *current,
 {
 	UITextField *textField = [alertView textFieldAtIndex:0];
 	NSString *eateryName = textField.text;
-	if(eateryName)
+	if(IsEmpty([eateryName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]))
 	{
-		[self.eateries addObject:eateryName];
-		[self saveEateries];
-		[self.tableView reloadData];
+		return;
 	}
+	[self.eateries addObject:eateryName];
+	[self saveEateries];
+	[self.tableView reloadData];
 }
 
 #pragma mark -
