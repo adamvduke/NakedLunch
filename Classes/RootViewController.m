@@ -147,7 +147,7 @@ static BOOL accelerationIsShaking(UIAcceleration *last, UIAcceleration *current,
 - (void)addEatery
 {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add Eatery"
-	                                                message:@"Indicate what eatery you would like to add."
+	                                                message:@"Enter the name of the eatery you would like to add."
 	                                               delegate:self
 	                                      cancelButtonTitle:@"Cancel"
 	                                      otherButtonTitles:@"OK", nil];
