@@ -10,6 +10,7 @@
 
 #import "ADSharedMacros.h"
 #import "RootViewController.h"
+#import "TTMacros.h"
 #include <stdlib.h>
 
 #define foo4random() ( arc4random() % ( (unsigned)RAND_MAX + 1 ) )
@@ -262,14 +263,10 @@ static BOOL accelerationIsShaking(UIAcceleration *last, UIAcceleration *current,
 - (void)dealloc
 {
 	[super dealloc];
-	[addBarButton release];
-	[shuffleBarButton release];
-	[eateries release];
-	[lastAcceleration release];
-	addBarButton = nil;
-	eateries = nil;
-	eateries = nil;
-	lastAcceleration = nil;
+	TT_RELEASE_SAFELY(addBarButton);
+	TT_RELEASE_SAFELY(shuffleBarButton);
+	TT_RELEASE_SAFELY(eateries);
+	TT_RELEASE_SAFELY(lastAcceleration);
 }
 
 @end
