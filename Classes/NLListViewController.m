@@ -3,7 +3,7 @@
 //  NakedLunch
 //
 //  Created by Adam Duke on 7/24/11.
-//  Copyright 2011 appRenaissance, LLC. All rights reserved.
+//  Copyright 2011 Adam Duke. All rights reserved.
 //
 
 #import "NLListViewController.h"
